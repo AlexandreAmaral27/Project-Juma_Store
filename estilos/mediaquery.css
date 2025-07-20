@@ -1,0 +1,31 @@
+  @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        animation: slideDown 0.3s ease-in-out;
+      }
+      .menu.show {
+        display: flex;
+      }
+      .menu-item {
+        width: 100%;
+      }
+      .menu-item > a::after {
+        content: '▾';
+        float: right;
+      }
+      .submenu {
+        display: none;
+        position: relative;
+        background-color: #2e2e70;
+        animation: fadeInMobile 0.3s ease-in-out;
+      }
+      .menu-item.active .submenu {
+        display: block;
+      }
+    }
