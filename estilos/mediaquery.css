@@ -1,4 +1,4 @@
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
       .hamburger {
         display: flex;
       }
@@ -8,6 +8,7 @@
         width: 100%;
         margin-top: 1rem;
         animation: slideDown 0.3s ease-in-out;
+      
       }
       .menu.show {
         display: flex;
@@ -28,4 +29,6 @@
       .menu-item.active .submenu {
         display: block;
       }
+      .bolsa-de-compras{
+      display: none;}
     }
